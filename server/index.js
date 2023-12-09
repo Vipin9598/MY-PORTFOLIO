@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000
 
 app.use(express.json());
 app.use(cors({
-    origin:"https://my-portfolio-git-main-vipin9598.vercel.app/",
+    origin:"https://my-portfolio-vipin9598.vercel.app/",
     methods: "GET,POST,PUT,DELETE", 
     credentials:true
 }))
