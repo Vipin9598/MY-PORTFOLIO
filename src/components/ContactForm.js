@@ -3,11 +3,14 @@ import Button from "./button";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { apiConnector } from "../Service/connector";
-const url = "https://portfolio-backend-0r6e.onrender.com/portfolio/sendMessage";
+const BASE_URL = process.env.REACT_APP_BASE_URL
+
+const url = BASE_URL+"/portfolio/sendMessage" 
 
 function ContactForm() {
   const [loading, setLoading] = useState(false);
   const data = "Send Message";
+  console.log(url)
   const {
     register,
     handleSubmit,
