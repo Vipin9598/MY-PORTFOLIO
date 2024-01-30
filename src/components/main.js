@@ -13,9 +13,11 @@ function main(){
                 <div className="flex flex-col gap-3 text-gray-400 text-3xl my-5">Hi,<br/> I'm Vipin,<br/> <TypingComponent /></div>
                 <div className="text-xl  leading-8 my-8  tracking-wide ">Hey there, I'm Vipin , I'm a final year B.Tech student and a full stack developer with a penchant for turning ideas into interactive digital experiences. Join me as I showcase my journey through a collection of projects that blend creativity and technology.</div>
                 {
-                    <a href="https://drive.google.com/file/d/175RP24fAfzjkdyJDkZEUZybAAxnzum75/view?usp=sharing" >
-                        <Button data={data}></Button>
-                    </a>
+                   <a href="https://drive.google.com/uc?id=175RP24fAfzjkdyJDkZEUZybAAxnzum75" download >
+                   <Button data={data}></Button>
+               </a>
+               
+                
                 }
 
             </div>
