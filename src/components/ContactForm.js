@@ -3,6 +3,7 @@ import Button from "./button";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { apiConnector } from "../Service/connector";
+import {motion,animate} from "framer-motion"
 const BASE_URL = process.env.REACT_APP_BASE_URL
 
 const url = BASE_URL+"/portfolio/sendMessage" 
@@ -50,13 +51,13 @@ function ContactForm() {
       id="contact"
       className=" w-full mx-auto  mt-20  border-b-2 pb-3 flex flex-col gap-8 "
     >
-      <h1 className="text-6xl font-bold text-orange-700 border-b-4 border-black pb-4  w-fit formheading">
+      <motion.h1 viewport={{once:true}}  initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0,transition:{duration:2}}}  className="text-6xl font-bold text-orange-700 border-b-4 border-black pb-4  w-fit formheading">
         Contact Me
-      </h1>
-      <p className="text-4xl font-semibold text-slate-500 formtitle">
+      </motion.h1>
+      <motion.p  initial={{opacity:0,x:100}} viewport={{once:true}}  whileInView={{opacity:1,x:0,transition:{duration:2}}}  className="text-4xl font-semibold text-slate-500 formtitle">
         Questions, thoughts, or just want to say hello?
-      </p>
-      <div className="">
+      </motion.p>
+      <motion.div initial={{opacity:0,y:200}} viewport={{once:true}}  whileInView={{opacity:1,y:0,transition:{duration:2}}} className="">
         <form
           onSubmit={handleSubmit(submitHandler)}
           className="my-3 mt-5 flex flex-col gap-10 w-[80%] mx-auto"
@@ -112,7 +113,7 @@ function ContactForm() {
             ! loading ? (<Button data={data} type="submit"/>) : (<Button data={data}/>)
           } */}
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 }

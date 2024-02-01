@@ -1,13 +1,14 @@
 import TypingComponent from "./typing";
 import Button from "./button"
 import image from "../images/cv1.jpeg"
+import {motion,animate} from "framer-motion"
 function main(){
 
     const data="My Resume"
     
     return (
         <div className="  mt-[100px] flex md:flex-row flex-col-reverse justify-between items-center gap-5 " id="main">
-            <div className=" text-gray-400 sm:w-7/12 w-11/12 max-w-[480px] mt-8 flex flex-col gap-5">
+            <motion.div initial={{opacity:0,x:-150}} whileInView={{opacity:1,x:0,transition:{duration:1,ease:"easeInOut"}}} className=" text-gray-400 sm:w-7/12 w-11/12 max-w-[480px] mt-8 flex flex-col gap-5">
                 {/* <p className="text-3xl font-bold text-red-500">MERN DEVLOPER
                 </p> */}
                 <div className="flex flex-col gap-3 text-gray-400 text-3xl my-5">Hi,<br/> I'm Vipin,<br/> <TypingComponent /></div>
@@ -20,13 +21,13 @@ function main(){
                 
                 }
 
-            </div>
-            <div  className=" my-auto sm:w-5/12 w-7/12 rounded-md">
+            </motion.div>
+            <motion.div initial={{opacity:0,x:150}} whileInView={{opacity:1,x:0,transition:{duration:1,ease:"easeInOut"}}}  className=" my-auto sm:w-5/12 w-7/12 rounded-md">
                     <div className=" md:rounded-md rounded-full overflow-hidden w-fit">
                         <img src={image} className="object-cover" />
                     </div>
                     
-            </div>
+            </motion.div>
 
         </div>
     )

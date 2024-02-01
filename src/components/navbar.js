@@ -40,7 +40,7 @@ function Navbar() {
                     <div className="h-[0.15rem] w-5 mb-[0.3rem] bg-white"></div>
                     
                 </div> */}
-          <button className="flex flex-col hidden hamshow  pt-2">
+          <button className=" flex-col hidden hamshow  pt-2">
             {hamBurger ? (
               <button onClick={clickHandler}>
                 <RxHamburgerMenu className="text-white text-xl" />
@@ -53,13 +53,13 @@ function Navbar() {
           </button>
           <div className="hamhide flex">
             <ul className=" flex gap-7 text-gray-400  text-2xl ">
-              <li className=" hover:border-b-2 border-slate-400 navtext">
+              <li className=" hover:border-b-2 border-orange-400  navtext">
                 <a href="#projects">Project</a>
               </li>
-              <li className=" hover:border-b-2 border-slate-400 navtext">
+              <li className=" hover:border-b-2 border-orange-400 navtext">
                 <a href="#skills">Skills</a>
               </li>
-              <li className=" hover:border-b-2 border-slate-400 navtext ">
+              <li className=" hover:border-b-2 border-orange-400 navtext ">
                 <a href="#contact">Contact</a>
               </li>
             </ul>
