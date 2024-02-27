@@ -1,7 +1,7 @@
 import TypingComponent from "./typing";
 import Button from "./button"
 import image from "../images/cv1.jpeg"
-import Resume from "../images/Resume .pdf"
+import Resume from "../images/Resume.pdf"
 import {motion,animate} from "framer-motion"
 function main(){
 
