@@ -1,15 +1,15 @@
 import gif from "./images/gif.png";
 import password from "./images/password.png";
 import weather from "./images/weather.png";
-import ILS from "./images/ILS.png";
+import MEDITECH from "./images/MEDITECH.png";
 const data = [
   {
     id: 1,
-    url: "https://vipin-ils-academy.netlify.app",
-    title: "ILS Academy",
+    url: "https://vipinmeditech.netlify.app/",
+    title: "MEDITECH",
     description:
-      "Ils Academy is a comprehensive online learning platform . It operates as a fully functional web app seamlessly integrated with RazorPay, ensuring a smooth payment experience for our users",
-    image: ILS,
+      "MEDITECH is a comprehensive online learning platform . It operates as a fully functional web app seamlessly integrated with RazorPay, ensuring a smooth payment experience for our users",
+    image: MEDITECH,
     btn: "CheckOut",
   },
   {
